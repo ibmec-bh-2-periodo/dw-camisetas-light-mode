@@ -4,6 +4,10 @@ CSS Grid é um sistema de layout poderoso e bidimensional que permite criar estr
 
 ---
 
+**Esta aula será 100% ativa, ou seja, com a participação dos alunos**. Para isso, vamos nos basear neste protótipo do [Figma](https://www.figma.com/design/MG61O5xhcAn2IkW2C2CTVY/Product-Overviews-(with-image-grid)-(Community)-(Copy)?node-id=485-722&t=cnYUXJbV6YIDcFPg-1). Cada aluno deverá clonar este repositório e criar a sua `branch`. Aqui, vamos utilizar conceitos de `flex` e `grid`.
+
+---
+
 ## **Índice**
 - [Grid Container](#grid-container)
   - [Elaboração do grid](#elaboracao-do-grid)
