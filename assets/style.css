@@ -1,10 +1,86 @@
-*{
+:root {
+    --cor-texto: #F9FAFB;
+    --cor-fundo: black;
+    --cor-botao: #fce7f3;
+    --cor-pagina-ativa: #d1d5db;
+    --cor-barra:#6b7280;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    color: #F9FAFB;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    height: 100vh;
+    width: 100vw;
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    font-family: "Inter";
+}
+
+header {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > img:nth-child(1) {
+    width: 54px;
+    height: 32px;
+}
+
+header > img:nth-child(2) {
+    width: 44px;
+    height: 24px;
+}
+
+header > button {
+  width: 50px;
+  height: 40px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: var(--cor-botao);
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--cor-texto);
+}
+
+nav > span {
+    color: var(--cor-barra);
+}
+
+nav a:last-child {
+    color: var(--cor-pagina-ativa);
+}
+
+#produto {
+    width: 90%;
+    height: 596px;
+}
+
+.grid {
+    width: 100;
+    height: 544px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+.image:nth-child(1) {
+background-image: url(./img/Product\ shot\ 1.png);
 }
