@@ -13,13 +13,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root {
-  --cor-texto: #f9fafb;
-  --cor-fundo: black;
-  --cor-botton: #fce7f3;
-  --cor-pagina-ativa: #d1d5db;
-  --cor-barra: #6b7280;
-}
+
 body {
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
@@ -333,4 +327,15 @@ footer p {
   font-weight: 400;
   color: var(--cor-pagina-ativa);
   margin-top: 20px;
+}
+
+@media (orientation: portrait) {
+  .inferior {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .description {
+    width: 90%;
+  }
 }
