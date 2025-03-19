@@ -250,8 +250,9 @@ ul li {
 }
 
 .cor:hover {
-  border: 3px solid #9ca3af;
-  border-spacing: 40px;
+  outline: 3px solid #9ca3af;
+  outline-offset: 2px;
+  /* border-spacing: 40px; */
 }
 
 .sizes {
@@ -284,7 +285,20 @@ ul li {
   background-color: #111827;
   border: 2px solid var(--cor-borda);
   color: var(--cor-borda);
-  text-decoration: line-through;
+  position: relative;
+  overflow: hidden;
+}
+
+.esgotado::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 2px;
+  background-color: var(--cor-borda);
+  transform: rotate(42deg);
+  transform-origin: top left;
 }
 
 .disponivel:hover {
@@ -333,4 +347,32 @@ footer p {
   font-weight: 400;
   color: var(--cor-pagina-ativa);
   margin-top: 20px;
+}
+
+
+@media (orientation: portrait){
+  body{
+    width: 85vw;
+  }
+
+  .inferior{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .description{
+    width: 100%;
+    gap:25px;
+  }
+
+.grid{
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.image:nth-child(1){
+  
+}
+
+
 }
