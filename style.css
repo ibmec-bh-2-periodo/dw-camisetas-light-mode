@@ -409,3 +409,12 @@ footer p {
     width: 100%;
   }
 }
+
+.modo-claro {
+--cor-texto: #111827;
+--cor-fundo: #FFFFFF;
+--cor-botao: #4F46E5;
+--cor-pagina-ativa: #6B7280;
+--cor-barra: #D1D5DB;
+--cor-borda: #E5E7EB;
+}
