@@ -365,14 +365,17 @@ footer p {
     gap:25px;
   }
 
-.grid{
+  .grid{
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  }
 }
 
-.image:nth-child(1){
-  
-}
-
-
+.modo-claro {
+  --cor-texto: #111827;
+  --cor-fundo: #ffffff;
+  --cor-botao: #4f46e5;
+  --cor-pagina-ativa: #6b7280;
+  --cor-barra: #d1d5db;
+  --cor-borda: #e5e7eb;
 }
