@@ -417,3 +417,12 @@ footer p {
     }
   
 }
+
+.modo-claro {
+  --cor-texto: #111827;
+  --cor-fundo: whitesmoke;
+  --cor-botao: #4f46e5;
+  --cor-pagina-ativa: #6b7280;
+  --cor-barra: #d1d5db;
+  --cor-borda: #e5e7eb;
+}
