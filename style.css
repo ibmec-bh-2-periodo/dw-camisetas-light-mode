@@ -6,6 +6,7 @@
   --cor-pagina-ativa: #d1d5db;
   --cor-barra: #6b7280;
   --cor-borda: #4b5563;
+  --cor-fundo-tamanhos: #111827;
 }
 
 * {
@@ -62,6 +63,7 @@ header > button {
   border: none;
   font-weight: 600;
   font-size: 14px;
+  color: var(--cor-fundo);
 }
 
 nav a {
@@ -232,21 +234,19 @@ ul li {
   width: 32px;
   height: 32px;
   border-radius: 100%;
+  border: 1px solid var(--cor-borda);
 }
 
 .cor:nth-child(1) {
   background-color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cor:nth-child(2) {
   background-color: #e5e7eb;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cor:nth-child(3) {
   background-color: #111827;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cor:hover {
@@ -282,7 +282,7 @@ ul li {
 }
 
 .esgotado {
-  background-color: #111827;
+  background-color: var(--cor-fundo-tamanhos);
   border: 2px solid var(--cor-borda);
   color: var(--cor-borda);
   position: relative;
@@ -302,7 +302,7 @@ ul li {
 }
 
 .disponivel:hover {
-  border: 2px solid #fbcfe8;
+  border: 2px solid var(--cor-botao);
 }
 
 .bag {
@@ -324,7 +324,8 @@ ul li {
   background-color: var(--cor-botao);
   border-radius: 6px;
   padding: 12px 32px;
-  border: 1px solid black;
+  color: var(--cor-fundo);
+  border: none;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -333,7 +334,7 @@ ul li {
 
 
 footer {
-  border-top: #4b5563 solid 1px;
+  border-top: var(--cor-borda) solid 1px;
   display: flex;
   flex-direction: column;
   padding: 32px;
@@ -378,4 +379,5 @@ footer p {
   --cor-pagina-ativa: #6b7280;
   --cor-barra: #d1d5db;
   --cor-borda: #e5e7eb;
+  --cor-fundo-tamanhos: #f9fafb;
 }
