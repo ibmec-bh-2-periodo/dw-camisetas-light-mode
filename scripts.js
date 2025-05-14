@@ -1,12 +1,24 @@
-const lightMode = document.getElementsByTagName("img")[1];
-console.log(lightMode);
 
-const logoLight = document.createElement("img");
-logoLight.innerHTML = `<img src="./assets/img/Logo.png" alt="Logomarca da loja" />`;
-const paiDasLogos = document.getElementById("header");
+const logoPrincipal = document.getElementById("logo-principal");
+const toggle = document.getElementById("toggle");
+const Star = document.getElementById("stars");
+const FooterL = document.getElementById("logo-footer")
 
-
-lightMode.addEventListener("click", function() {
+toggle.addEventListener("click", function() {
     document.body.classList.toggle("modo-claro");
-    paiDasLogos.appendChild(logoLight);
-})
+    
+    if (document.body.classList.contains("modo-claro")){
+        logoPrincipal.src = "assets/img/Logo-Light.png";
+        toggle.src = "assets/img/Toogle-Light.png";
+        Star.src = "assets/img/Stars-Light.png";
+        FooterL.src = "assets/img/Logo-tailwind-light.png";
+        
+
+    }
+    else{
+        logoPrincipal.src = "assets/img/Logo.png";
+        toggle.src = "assets/img/Toogle.png";
+        Star.src = "assets/img/Stars.png";
+        FooterL.src = "assets/img/Logo-2.png";
+    }
+});

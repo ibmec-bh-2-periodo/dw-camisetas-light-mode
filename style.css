@@ -6,6 +6,8 @@
   --cor-pagina-ativa: #d1d5db;
   --cor-barra: #6b7280;
   --cor-borda: #4b5563;
+  --cor-bordalgiht: #111827;
+  
 }
 
 * {
@@ -53,6 +55,7 @@ header > button {
   padding: 8px 12px;
   border-radius: 6px;
   background-color: var(--cor-botao);
+  color: var(--cor-fundo);
   border: none;
   font-weight: 600;
   font-size: 14px;
@@ -95,7 +98,7 @@ nav a:last-child {
 
 .image {
   border-radius: 8px;
-  max-height: ;
+
 }
 
 .image:nth-child(1) {
@@ -230,21 +233,22 @@ ul li {
   width: 32px;
   height: 32px;
   border-radius: 100%;
+  border: 1px solid var(--cor-borda)
 }
 
 .cor:nth-child(1) {
   background-color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 .cor:nth-child(2) {
   background-color: #e5e7eb;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 .cor:nth-child(3) {
   background-color: #111827;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 .cor:hover {
@@ -276,10 +280,11 @@ ul li {
   align-items: center;
   font-size: 14px;
   font-weight: 500;
+
 }
 
 .esgotado {
-  background-color: #111827;
+  background-color: var(--cor-bordalgiht);
   border: 2px solid var(--cor-borda);
   color: var(--cor-borda);
   position: relative;
@@ -299,7 +304,8 @@ ul li {
 }
 
 .disponivel:hover {
-  border: 2px solid #fbcfe8;
+  border: 2px solid var(--cor-botao);
+
 }
 
 .bag {
@@ -324,14 +330,15 @@ ul li {
   background-color: var(--cor-botao);
   border-radius: 6px;
   padding: 12px 32px;
-  border: 1px solid black;
+  border: none;
+  color: var(--cor-fundo);
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
 }
 
 footer {
-  border-top: #4b5563 solid 1px;
+  border-top: var(--cor-borda) 1px solid;
   display: flex;
   flex-direction: column;
   padding: 32px;
@@ -417,4 +424,5 @@ footer p {
   --cor-pagina-ativa: #6B7280;
   --cor-barra: #D1D5DB;
   --cor-borda: #e5e7eb;
+  --cor-bordalgiht: #f9fafb;
 }
