@@ -392,3 +392,12 @@ footer p {
         background-size: cover;
     }
 }
+
+.modo-claro {
+    --cor-texto: #111827;
+    --cor-fundo: white;
+    --cor-botao: #4f45e5;
+    --cor-pagina-ativa: #6b7280;
+    --cor-barra: #d1d5db;
+    --cor-borda: #e5e7eb;
+}
